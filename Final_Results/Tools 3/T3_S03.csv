@@ -1,0 +1,36 @@
+PLL	HL	STATE	OFFSET	AppointmentID	LawyerID	AppointmentDate	AppointmentStatus	
+LawyerAppointments	[26|4]	1	 	12260	1	201	2024-12-01	Scheduled
+LawyerAppointments	[27|4]	3	 	12202	3	203	2024-12-03	Scheduled
+LawyerAppointments	[27|4]	5	 	12144	5	205	2024-12-05	Scheduled
+LawyerAppointments	[27|4]	7	 	12086	7	207	2024-12-07	Scheduled
+LawyerAppointments	[27|4]	8	 	12057	8	208	2024-12-08	Completed
+LawyerAppointments	[27|4]	9	 	12028	9	209	2024-12-09	Scheduled
+LawyerAppointments	[27|4]	10	 	11999	10	210	2024-12-10	Completed
+LawyerAppointments	[27|4]	-1	D	12119	6	206	2024-12-06	Completed
+LawyerAppointments	[27|4]	-1	D	12177	4	204	2024-12-04	Completed
+LawyerAppointments	[27|4]	-1	D	12235	2	202	2024-12-02	Completed
+PLL	HL	STATE	OFFSET	CaseID	ClientID	CaseType	CaseStatus	
+LegalCases	[18|4]	2	 	8149	2	102	Civil	Closed
+LegalCases	[21|4]	4	 	8104	4	104	Criminal	Closed
+LegalCases	[19|4]	6	 	8062	6	106	Family	Closed
+LegalCases	[22|4]	7	 	8038	7	107	Criminal	Pending
+LegalCases	[18|4]	8	 	8018	8	108	Civil	Closed
+LegalCases	[20|4]	9	 	7996	9	109	Family	Pending
+LegalCases	[21|4]	10	 	7973	10	110	Criminal	Closed
+LegalCases	[18|3]	-1	D	8087	1385	Civil	Pending
+LegalCases	[86|4]	-1	D	8090			
+LegalCases	[20|4]	-1	D	8131	3	103	Family	Pending
+LegalCases	[21|4]	-1	D	8173		101	Criminal	Pending
+PLL	HL	STATE	OFFSET	object	obj name	namespace	root page	Statement	
+__SQLiteMaster	[391|6]	1	 	3602	table	LegalCases	LegalCases	2	CREATE TABLE LegalCases (
+    CaseID INTEGER NOT NULL,          -- Unique identifier for the case
+    ClientID INTEGER NOT NULL,        -- Client ID associated with the case
+    CaseType TEXT NOT NULL,           -- Type of case (e.g., Criminal, Civil, Family)
+    CaseStatus TEXT NOT NULL          -- Current status of the case (e.g., Pending, Closed)
+)
+__SQLiteMaster	[424|6]	2	 	3175	table	LawyerAppointments	LawyerAppointments	3	CREATE TABLE LawyerAppointments (
+    AppointmentID INTEGER NOT NULL,      -- Unique identifier for the appointment
+    LawyerID INTEGER NOT NULL,           -- Lawyer ID associated with the appointment
+    AppointmentDate TEXT NOT NULL,       -- Date of the appointment
+    AppointmentStatus TEXT NOT NULL      -- Status of the appointment (e.g., Scheduled, Completed)
+)

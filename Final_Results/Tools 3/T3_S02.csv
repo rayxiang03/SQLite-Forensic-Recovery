@@ -1,0 +1,38 @@
+PLL	HL	STATE	OFFSET	EmployeeID	FirstName	LastName	BirthDate	Salary	Department	IsFullTime	HireDate	LastReview	Address	Bonus	EmergencyContactPhone	EmployeeType	Status	Nationality	ZipCode	
+EmployeeRecords	[114|16]	2	 	7972	2	Jane	Smith	1990-06-30	55000.75000000	Marketing	1	2015-07-20	7.80000000	2345 Oak St, Metropolis	3000	555-5678	1	1	Canada	62345
+EmployeeRecords	[114|16]	4	 	7762	4	Bob	Brown	1979-08-22	115000.30000000	Finance	1	2005-12-25	8.50000000	4567 Birch St, Lakeview	7000	555-6543	1	1	Australia	62567
+EmployeeRecords	[105|16]	6	 	7536	6	Diana	Miller	1988-04-25	72000.10000000	Legal	1	2012-02-18	9	6789 Cedar St, Forestville	2000	555-4321	1	1	USA	62789
+EmployeeRecords	[111|16]	8	 	7314	8	Frank	Taylor	1980-09-30	98000	Operations	1	2007-11-14	8.70000000	8901 Redwood St, Cityview	null	555-5432	1	1	India	62901
+EmployeeRecords	[113|16]	10	 	7080	10	Henry	Thomas	1990-05-10	54000.60000000	Finance	0	2017-09-30	6.80000000	1122 Ash St, Valleyview	null	555-4322	2	1	Canada	63123
+EmployeeRecords	[101|16]	12	 	6861	12	Jake	White	1993-02-22	56000.50000000	Legal	1	2019-11-02	8	3344 Birch St, Riverdale	2500	555-3456	1	1	USA	63345
+EmployeeRecords	[103|16]	14	 	6631	14	Lara	Lee	1983-12-29	75000.25000000	IT	0	2008-04-25	8.90000000	5566 Pine St, Lakeside	3000	555-6547	1	1	Japan	63567
+EmployeeRecords	[111|16]	16	 	6404	16	Nina	Gonzalez	1994-06-13	46000.10000000	Sales	0	2021-02-07	6.30000000	7788 Fir St, Parkland	1200	555-7654	2	1	Spain	63789
+EmployeeRecords	[108|16]	18	 	6187	18	Paul	Martinez	1992-01-26	65000	IT	1	2015-06-22	8.50000000	9900 Ash St, Springdale	4000	555-8764	1	1	Argentina	63901
+EmployeeRecords	[113|16]	19	 	6072	19	Quinn	Roberts	1990-11-14	90000	Engineering	1	2016-08-09	8.20000000	10101 Pine St, Rivervale	null	555-2349	1	1	Mexico	64012
+EmployeeRecords	[109|16]	20	 	5961	20	Rita	Clark	1993-05-20	72000.25000000	Sales	1	2022-01-17	9.30000000	11111 Birch St, Grandview	3500	555-5671	1	1	USA	64123
+EmployeeRecords	[112|16]	-1	D	6521	15	Maya	Lopez	1987-11-02	68000.20000000	Operations	1	2014-09-12	9.10000000	6677 Cedar St, Horizon		555-5430	1	1	Brazil	63678
+EmployeeRecords	[123|16]	-1	D	6740	13	Kevin	Martin	1996-10-15	35000.75000000	Engineering	1	2022-07-21	7.20000000	4455 Maple St, Crestwood		555-9876	1	1	South Africa	63456
+EmployeeRecords	[114|16]	-1	D	6968	11	Isla	Jackson	1986-07-05	86000.30000000	HR	1	2013-08-19	8.40000000	2233 Elm St, Greenfield	5000	555-6789	1	1	New Zealand	63234
+EmployeeRecords	[117|16]	-1	D	7199	9	Grace	Anderson	1991-12-18	48000.50000000	Marketing	1	2014-03-03	7.90000000	9012 Pine St, Meadowbrook	1500	555-2345	1	1	USA	63012
+EmployeeRecords	[107|16]	-1	D	7431	7	Eva	Wilson	1995-01-17	43000.25000000	Sales	0	2020-06-05	6.50000000	7890 Fir St, Sunset	1000	555-8765	2	1	France	62890
+EmployeeRecords	[117|16]	-1	D	7647	5	Charlie	Davis	1992-03-12	65000.40000000	Engineering	1	2016-09-10	8.30000000	5678 Maple St, Hilltop		555-3210	1	1	Germany	62678
+EmployeeRecords	[102|16]	-1	D	8092		John	Doe	1985-02-15	75000.50000000	IT	1	2010-04-12	9.20000000	1234 Elm St, Springfield	5000	555-1234	1	1	USA	62704
+PLL	HL	STATE	OFFSET	object	obj name	namespace	root page	Statement	
+__SQLiteMaster	[1295|6]	1	 	2698	table	EmployeeRecords	EmployeeRecords	2	CREATE TABLE EmployeeRecords (
+    EmployeeID INTEGER NOT NULL,           -- Unique integer ID
+    FirstName TEXT NOT NULL,               -- Text for first name
+    LastName TEXT NOT NULL,                -- Text for last name
+    BirthDate DATE NOT NULL,               -- Date for birthdate
+    Salary REAL NOT NULL,                  -- Real value for salary
+    Department TEXT NOT NULL,              -- Text for department name
+    IsFullTime BOOLEAN NOT NULL,           -- Boolean for employment status
+    HireDate DATE NOT NULL,                -- Date for hire date
+    LastReview REAL,                       -- Real for last review score (0-10 scale)
+    Address TEXT,                          -- Text for address (nullable)
+    Bonus INTEGER,                         -- Integer for bonus (nullable)
+    EmergencyContactPhone TEXT,            -- Text for emergency contact number
+    EmployeeType INTEGER NOT NULL,         -- Integer for employee type (1 = Regular, 2 = Contract)
+    Status INTEGER NOT NULL,               -- Integer for employment status (1 = Active, 0 = Inactive)
+    Nationality TEXT,                      -- Text for nationality (nullable)
+    ZipCode INTEGER                        -- Integer for zip code
+)
