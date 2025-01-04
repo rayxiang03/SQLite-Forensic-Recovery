@@ -1,0 +1,12 @@
+Type	Offset	Length	Data
+Non-Leaf-Table-Btree-Type_83	0	4096	QLite format 3@ .zq   ++UtableEmployeeRecordsEmployeeRecordsCREATE TABLE EmployeeRecords ( EmployeeID INTEGER NOT NULL, -- Unique integer ID FirstName TEXT NOT NULL, -- Text for first name LastName TEXT NOT NULL, -- Text for last name BirthDate DATE NOT NULL, -- Date for birthdate Salary REAL NOT NULL, -- Real value for salary Department TEXT NOT NULL, -- Text for department name IsFullTime BOOLEAN NOT NULL, -- Boolean for employment status HireDate DATE NOT NULL, -- Date for hire date LastReview REAL, -- Real for last review score (0-10 scale) Address TEXT, -- Text for address (nullable) Bonus INTEGER, -- Integer for bonus (nullable) EmergencyContactPhone TEXT, -- Text for emergency contact number EmployeeType INTEGER NOT NULL, -- Integer for employee type (1 = Regular, 2 = Contract) Status INTEGER NOT NULL, -- Integer for employment status (1 = Active, 0 = Inactive) Nationality TEXT, -- Text for nationality (nullable) ZipCode INTEGER -- Integer for zip code )
+Unallocated	4126	1835	IIIIIIIII
+Free Block	6297	107	uk! !C OscarPerez1981-04-09@%Finance2003-12-04 8899 Redwood St, Brightside555-4320USA
+Free Block	6517	114	Pr!! !9 MayaLopez1987-11-02@3333Operations2014-09-12@"3333336677 Cedar St, Horizon555-5430Brazil
+Free Block	6736	125	4}!# != % KevinMartin1996-10-15@Engineering2022-07-21@4455 Maple St, Crestwood555-9876South Africa
+Free Block	6964	116	t! !; # IslaJackson1986-07-05@HR2013-08-19@ 2233 Elm St, Greenfield555-6789New Zealand
+Free Block	7195	119	w! !?  GraceAnderson1991-12-18@pMarketing2014-03-03@9012 Pine St, Meadowbrook555-2345USA$
+Free Block	7427	109	m!!3 EvaWilson1995-01-17@Sales2020-06-05@7890 Fir St, Sunset555-8765France
+Free Block	7643	119	w!# !9 CharlieDavis1992-03-12@ Engineering2016-09-10@ 5678 Maple St, Hilltop555-3210Germany
+Free Block	7878	94	^!!; AliceJohnson1982-11-05_HR2018-01-153456 Pine St, Rivertown555-9876UK
+Free Block	8088	104	h! != JohnDoe1985-02-15@OIT2010-04-12@"ffffff1234 Elm St, Springfield555-1234USA

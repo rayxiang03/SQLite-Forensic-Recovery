@@ -1,0 +1,6 @@
+Type	Offset	Length	Data
+Non-Leaf-Table-Btree-Type_83	0	4096	QLite format 3@ .zq  v (11{tableLawyerAppointmentsLawyerAppointmentsCREATE TABLE LawyerAppointments ( AppointmentID INTEGER NOT NULL, -- Unique identifier for the appointment LawyerID INTEGER NOT NULL, -- Lawyer ID associated with the appointment AppointmentDate TEXT NOT NULL, -- Date of the appointment AppointmentStatus TEXT NOT NULL -- Status of the appointment (e.g., Scheduled, Completed) )!!YtableLegalCasesLegalCasesCREATE TABLE LegalCases ( CaseID INTEGER NOT NULL, -- Unique identifier for the case ClientID INTEGER NOT NULL, -- Client ID associated with the case CaseType TEXT NOT NULL, -- Type of case (e.g., Criminal, Civil, Family) CaseStatus TEXT NOT NULL -- Current status of the case (e.g., Pending, Closed) )
+Unallocated	4118	3855	%%%
+Free Block	8083	21	iCivilPending
+Free Block	8127	22	gFamilyPending
+Free Block	8169	23	eCriminalPending
